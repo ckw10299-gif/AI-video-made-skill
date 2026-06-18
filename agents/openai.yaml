@@ -1,0 +1,6 @@
+interface:
+  display_name: "AI-video-made-skill"
+  short_description: "图片直出或参考视频复刻生成中文 AI 视频提示词"
+  default_prompt: "Use $AI-video-made-skill with my images/video, type, and brief to create a Chinese AI video generation prompt."
+policy:
+  allow_implicit_invocation: true
