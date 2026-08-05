@@ -14,7 +14,7 @@ description: 生成可直接用于即梦、可灵、Seedance、Sora、Runway 等
 3. 抖音复刻：处理1至3条抖音链接，自动下载、抽帧、逐条分析并输出同等数量的提示词。
 4. 对已有提示词进行局部修改、格式转换、节奏压缩、分段生成和失败诊断。
 
-需要判断画风、真人与动画成稿差异、镜头规则或提示词避坑时，读取 [references/production-guide.md](references/production-guide.md)。需要具体写法时，读取 [references/examples.md](references/examples.md)。
+需要判断画风、真人与动画成稿差异、镜头规则或提示词避坑时，读取 [references/production-guide.md](references/production-guide.md)。需要具体写法时，读取 [references/examples.md](references/examples.md)。任务提到《闪耀吧噜咪》、噜咪、彩色噜咪、星彩噜咪、自动捉宠或该项目本地化时，必须先读取 [references/shining-lumi-brief.md](references/shining-lumi-brief.md)，只使用其中已经确认的玩法、术语和卖点，不自行发明游戏系统。
 
 ## 首次调用
 
