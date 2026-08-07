@@ -1,6 +1,6 @@
 interface:
   display_name: "AI-video-made-skill"
-  short_description: "文生、视频复刻与抖音本地化提示词工作流"
-  default_prompt: "使用 $ai-video-made-skill 根据我的剧情、本地视频或1至3条抖音链接，分析并生成可直接使用的中文 AI 视频提示词。"
+  short_description: "AI视频提示词、复刻、本地化与确认后自动提交"
+  default_prompt: "使用 $ai-video-made-skill 根据我的剧情、本地视频或1至3条抖音链接，先分析并生成可直接使用的中文 AI 视频提示词；如果我选择自动生产，请在我确认成稿后再上传素材、建立引用并提交生成。"
 policy:
   allow_implicit_invocation: true

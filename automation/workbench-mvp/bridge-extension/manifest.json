@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "AI工坊本地提交桥",
+  "version": "0.2.3",
+  "description": "把本地提示词与物料准确提交到AI工坊，并建立真实素材引用。",
+  "permissions": ["storage", "tabs", "debugger"],
+  "host_permissions": [
+    "http://127.0.0.1:8787/*",
+    "http://game-ad-material-mng.bilibili.co/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://game-ad-material-mng.bilibili.co/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "AI工坊本地提交桥",
+    "default_popup": "popup.html"
+  }
+}

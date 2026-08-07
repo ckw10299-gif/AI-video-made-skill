@@ -1,6 +1,6 @@
 ---
 name: ai-video-made-skill
-description: 生成可直接用于即梦、可灵、Seedance、Sora、Runway 等工具的中文 AI 视频提示词。支持根据角色图与剧情直接创作；根据本地视频或1至3条抖音链接自动下载、抽帧分析，再复刻结构、节奏、台词功能和镜头机制并完成游戏本地化。适用于剧情、展示、进化、黑化、技能、买量前贴、短剧冲突与批量视频本地化。
+description: 生成可直接用于即梦、可灵、Seedance、Sora、Runway 等工具的中文 AI 视频提示词。支持文生视频、本地视频复刻、1至3条抖音链接批处理、素材绑定与确认后自动提交生成。适用于剧情、展示、进化、黑化、技能、买量前贴、真人短剧与批量游戏本地化。
 ---
 
 # AI-video-made-skill
@@ -13,8 +13,9 @@ description: 生成可直接用于即梦、可灵、Seedance、Sora、Runway 等
 2. 视频生视频：读取本地视频、抽帧并分析构图、站位、动作、台词和节奏，再完成本地化。
 3. 抖音复刻：处理1至3条抖音链接，自动下载、抽帧、逐条分析并输出同等数量的提示词。
 4. 对已有提示词进行局部修改、格式转换、节奏压缩、分段生成和失败诊断。
+5. 可选自动生产：用户确认提示词后，进入视频生成网站的“视频生成-个人”，上传匹配画风的素材，建立真实 `@` 素材关联并提交生成任务。
 
-需要判断画风、真人与动画成稿差异、镜头规则或提示词避坑时，读取 [references/production-guide.md](references/production-guide.md)。需要具体写法时，读取 [references/examples.md](references/examples.md)。任务提到《闪耀吧噜咪》、噜咪、彩色噜咪、星彩噜咪、自动捉宠或该项目本地化时，必须先读取 [references/shining-lumi-brief.md](references/shining-lumi-brief.md)，只使用其中已经确认的玩法、术语和卖点，不自行发明游戏系统。
+需要判断画风、真人与动画成稿差异、镜头规则或提示词避坑时，读取 [references/production-guide.md](references/production-guide.md)。需要端到端步骤时，读取 [references/full-production-workflow.md](references/full-production-workflow.md)。需要具体写法时，读取 [references/examples.md](references/examples.md)。用户选择自动提交时，还必须读取 [references/automation-workflow.md](references/automation-workflow.md)。任务提到《闪耀吧噜咪》、噜咪、彩色噜咪、星彩噜咪、自动捉宠或该项目本地化时，必须先读取 [references/shining-lumi-brief.md](references/shining-lumi-brief.md)，只使用其中已经确认的玩法、术语和卖点，不自行发明游戏系统。
 
 ## 首次调用
 
@@ -24,6 +25,8 @@ description: 生成可直接用于即梦、可灵、Seedance、Sora、Runway 等
 
 ```text
 【AI 视频需求填写模板】
+
+（生产方式）：只生成提示词 / 提示词确认后自动提交生成
 
 （类型）：文生视频 / 视频生视频
 
@@ -44,6 +47,8 @@ description: 生成可直接用于即梦、可灵、Seedance、Sora、Runway 等
 （备注）：
 产品名、核心卖点、固定台词、画幅、平台、必须保留或禁止出现的内容。
 ```
+
+“提示词确认后自动提交生成”采用严格两阶段门禁：第一阶段只分析并输出提示词；用户明确回复确认后，第二阶段才允许上传素材、绑定引用和点击生成。修改意见出现时返回第一阶段，重新确认后再提交。
 
 用户也可以跳过模板，直接发送1至3条抖音链接，并补充游戏名、核心卖点、角色替换和固定台词。此时自动进入“抖音链接批处理”工作流。
 

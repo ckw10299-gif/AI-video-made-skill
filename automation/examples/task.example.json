@@ -1,0 +1,21 @@
+{
+  "prompt": "【画面风格】\n竖屏9:16，低饱和游戏三渲二风格。\n\n【角色】\n主角：{{asset:main-character}}，负责推动剧情。\n\n【其他参考】\n彩色噜咪：{{asset:color-lumi}}，形态保持稳定。\n\n【具体内容】\n0-6秒：主角与彩色噜咪完成一段连续互动。\n\n【正向提示词】\n竖屏9:16，游戏三渲二，稳定角色形象，连贯动作。",
+  "assets": [
+    {
+      "name": "main-character",
+      "path": "D:\\your-material-library\\anime\\main-character.png",
+      "mentionLabel": "图片1"
+    },
+    {
+      "name": "color-lumi",
+      "path": "D:\\your-material-library\\anime\\color-lumi.png",
+      "mentionLabel": "图片2"
+    }
+  ],
+  "config": {
+    "ratio": "9:16",
+    "resolution": "720p",
+    "duration": 6
+  },
+  "submit": false
+}
