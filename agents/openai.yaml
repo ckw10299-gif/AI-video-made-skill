@@ -1,6 +1,6 @@
 interface:
   display_name: "AI-video-made-skill"
-  short_description: "AI视频提示词、复刻、本地化与确认后自动提交"
-  default_prompt: "使用 $ai-video-made-skill 根据我的剧情、本地视频或1至3条抖音链接，先分析并生成可直接使用的中文 AI 视频提示词；如果我选择自动生产，请在我确认成稿后再上传素材、建立引用并提交生成。"
+  short_description: "参考视频与平面素材转完整AI视频生产包"
+  default_prompt: "使用 $ai-video-made-skill 分析我提供的参考视频和角色、宠物、道具平面图，按视频需要生成三视图、首帧或关键参考图及完整中文视频提示词，并按原文件夹交付；确认自动生产后再提交生成。"
 policy:
   allow_implicit_invocation: true
